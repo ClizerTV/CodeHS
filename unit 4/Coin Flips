@@ -1,0 +1,26 @@
+public class CoinFlips extends ConsoleProgram
+{
+    public static final int FLIPS = 100;
+    
+    public void run()
+    {
+        int numHeads=0;
+        int numTails=0;
+        for (int i=0; i<FLIPS; i++){
+            if(Randomizer.nextBoolean())
+            {
+                System.out.println("Heads");
+                numHeads++;
+            }
+            else 
+            {
+                System.out.println("Tails");
+                numTails++;
+            }
+        }
+        System.out.println("Heads: "+ numHeads);
+        System.out.println("Tails: " + numTails);
+        System.out.println("% heads: " + "0." + numHeads);
+        System.out.println("% tails: " + "0." + numTails);
+    }
+}
