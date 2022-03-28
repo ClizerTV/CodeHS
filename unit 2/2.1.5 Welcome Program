@@ -1,0 +1,9 @@
+public class Welcome extends ConsoleProgram
+{
+    public void run()
+    {
+        System.out.println("Hello my name is Bob");
+        System.out.println("I like to program things");
+    
+    } 
+}
